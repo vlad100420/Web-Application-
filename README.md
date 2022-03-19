@@ -1,2 +1,2 @@
 # Web-Application-
-A web application with MySQL database for grades evidence
+A Java Web Application with MySQL database for grades evidence
