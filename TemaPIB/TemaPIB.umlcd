@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_h2MDYIeWEeyyEJFKpspqDg">
+  <modelElement href="TemaPIB.uml#_h-r4EIeWEeyyEJFKpspqDg"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_iA4QcIeWEeyyEJFKpspqDg" source="_iA4QeYeWEeyyEJFKpspqDg">
+    <modelElement href="TemaPIB.uml#_h_2VsIeWEeyyEJFKpspqDg"/>
+    <stereotypes xmi:id="_iA4QcYeWEeyyEJFKpspqDg" name="Reference">
+      <modelElement href="TemaPIB.uml#_h_28wIeWEeyyEJFKpspqDg"/>
+    </stereotypes>
+    <nameVisual xmi:id="_iA4QcoeWEeyyEJFKpspqDg" text=""/>
+    <sourceRole xmi:id="_iA4Qc4eWEeyyEJFKpspqDg" aggregationKind="NONE" name="">
+      <modelElement href="TemaPIB.uml#_h_2VsYeWEeyyEJFKpspqDg"/>
+      <visibility xmi:id="_iA4QdIeWEeyyEJFKpspqDg" label="+"/>
+      <cardinality xmi:id="_iA4QdYeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_iA4QdoeWEeyyEJFKpspqDg" aggregationKind="NONE" name="con" navigable="true">
+      <modelElement href="TemaPIB.uml#_h_xdMIeWEeyyEJFKpspqDg"/>
+      <stereotypes xmi:id="_reMsMIemEeyUTfWzGSmjNQ" name="LegacyStyledElement">
+        <modelElement href="TemaPIB.uml#_h_xdMYeWEeyyEJFKpspqDg"/>
+      </stereotypes>
+      <visibility xmi:id="_iA4Qd4eWEeyyEJFKpspqDg" label="~"/>
+      <cardinality xmi:id="_iA4QeIeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_iA4QeYeWEeyyEJFKpspqDg" name="JavaBean" associationsOut="_iA4QcIeWEeyyEJFKpspqDg">
+    <modelElement href="TemaPIB.uml#_h-wJgIeWEeyyEJFKpspqDg"/>
+    <visualProperties xmi:id="_iA4QeoeWEeyyEJFKpspqDg" position="30.0,30.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_iA4Qe4eWEeyyEJFKpspqDg" label="+"/>
+    <attributes xmi:id="_iA4QfIeWEeyyEJFKpspqDg" name="error">
+      <modelElement href="TemaPIB.uml#_h_w2IIeWEeyyEJFKpspqDg"/>
+      <stereotypes xmi:id="_iA4QfYeWEeyyEJFKpspqDg" name="LegacyStyledElement">
+        <modelElement href="TemaPIB.uml#_h_w2IYeWEeyyEJFKpspqDg"/>
+      </stereotypes>
+      <visibility xmi:id="_iA4QfoeWEeyyEJFKpspqDg" label="~"/>
+      <cardinality xmi:id="_iA4Qf4eWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+      <type xmi:id="_iA4QgIeWEeyyEJFKpspqDg" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_iA4QgYeWEeyyEJFKpspqDg" name="con">
+      <modelElement href="TemaPIB.uml#_h_xdMIeWEeyyEJFKpspqDg"/>
+      <stereotypes xmi:id="_reiDYIemEeyUTfWzGSmjNQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_rej4kIemEeyUTfWzGSmjNQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_rekfoIemEeyUTfWzGSmjNQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_Bu1r0YfrEeyUTfWzGSmjNQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_Bu1r0ofrEeyUTfWzGSmjNQ" name="LegacyStyledElement"/>
+      <stereotypes xmi:id="_Bu1r04frEeyUTfWzGSmjNQ" name="LegacyStyledElement"/>
+      <visibility xmi:id="_iA4Qg4eWEeyyEJFKpspqDg" label="~"/>
+      <cardinality xmi:id="_iA4QhIeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+      <type xmi:id="_iA4QhYeWEeyyEJFKpspqDg" name="Connection">
+        <modelElement href="TemaPIB.uml#_h_sksIeWEeyyEJFKpspqDg"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_iA4QhoeWEeyyEJFKpspqDg" name="JavaBean">
+      <modelElement href="TemaPIB.uml#_h-wwkIeWEeyyEJFKpspqDg"/>
+      <keywords xmi:id="_iA4Qh4eWEeyyEJFKpspqDg" keyword="create"/>
+      <stereotypes xmi:id="_iA4QiIeWEeyyEJFKpspqDg" name="LegacyStyledElement">
+        <modelElement href="TemaPIB.uml#_h-xXoIeWEeyyEJFKpspqDg"/>
+      </stereotypes>
+      <visibility xmi:id="_iA4QiYeWEeyyEJFKpspqDg" label="+"/>
+      <cardinality xmi:id="_iA4QioeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_iA4Qi4eWEeyyEJFKpspqDg">
+        <modelElement href="TemaPIB.uml#_h-xXoYeWEeyyEJFKpspqDg"/>
+        <type xmi:id="_iA4QjIeWEeyyEJFKpspqDg" name="JavaBean">
+          <modelElement href="TemaPIB.uml#_h-wJgIeWEeyyEJFKpspqDg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_iA4QjYeWEeyyEJFKpspqDg" name="connect">
+      <modelElement href="TemaPIB.uml#_h-xXooeWEeyyEJFKpspqDg"/>
+      <visibility xmi:id="_iA4QjoeWEeyyEJFKpspqDg" label="+"/>
+      <cardinality xmi:id="_iA4Qj4eWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_iA4QkIeWEeyyEJFKpspqDg" name="disconnect">
+      <modelElement href="TemaPIB.uml#_h-xXo4eWEeyyEJFKpspqDg"/>
+      <visibility xmi:id="_iA4QkYeWEeyyEJFKpspqDg" label="+"/>
+      <cardinality xmi:id="_iA4QkoeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_iA4Qk4eWEeyyEJFKpspqDg" name="adaugaElev">
+      <modelElement href="TemaPIB.uml#_h-x-sIeWEeyyEJFKpspqDg"/>
+      <visibility xmi:id="_iA4QlIeWEeyyEJFKpspqDg" label="+"/>
+      <cardinality xmi:id="_iA4QlYeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_iA4QloeWEeyyEJFKpspqDg" name="nume">
+        <modelElement href="TemaPIB.uml#_h-x-sYeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4Ql4eWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4QmIeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4QmYeWEeyyEJFKpspqDg" name="prenume">
+        <modelElement href="TemaPIB.uml#_h-x-soeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4QmoeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4Qm4eWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4QnIeWEeyyEJFKpspqDg" name="data_nasterii">
+        <modelElement href="TemaPIB.uml#_h-x-s4eWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4QnYeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4QnoeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4Qn4eWEeyyEJFKpspqDg" name="cnp">
+        <modelElement href="TemaPIB.uml#_h-x-tIeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4QoIeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4QoYeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4QooeWEeyyEJFKpspqDg" name="adresa">
+        <modelElement href="TemaPIB.uml#_h-x-tYeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4Qo4eWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4QpIeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4QpYeWEeyyEJFKpspqDg" name="telefon">
+        <modelElement href="TemaPIB.uml#_h-ylwIeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4QpoeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4Qp4eWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4QqIeWEeyyEJFKpspqDg" name="clasa">
+        <modelElement href="TemaPIB.uml#_h-ylwYeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4QqYeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4QqoeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_iA4Qq4eWEeyyEJFKpspqDg" name="adaugaSubiect">
+      <modelElement href="TemaPIB.uml#_h-ylwoeWEeyyEJFKpspqDg"/>
+      <visibility xmi:id="_iA4QrIeWEeyyEJFKpspqDg" label="+"/>
+      <cardinality xmi:id="_iA4QrYeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_iA4QroeWEeyyEJFKpspqDg" name="nume_profesor">
+        <modelElement href="TemaPIB.uml#_h-ylw4eWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4Qr4eWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4QsIeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4QsYeWEeyyEJFKpspqDg" name="materie">
+        <modelElement href="TemaPIB.uml#_h-zM0IeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4QsoeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4Qs4eWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4QtIeWEeyyEJFKpspqDg" name="numar_probleme">
+        <modelElement href="TemaPIB.uml#_h-zM0YeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4QtYeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4QtoeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_iA4Qt4eWEeyyEJFKpspqDg" name="adaugaNota">
+      <modelElement href="TemaPIB.uml#_h-zM0oeWEeyyEJFKpspqDg"/>
+      <visibility xmi:id="_iA4QuIeWEeyyEJFKpspqDg" label="+"/>
+      <cardinality xmi:id="_iA4QuYeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_iA4QuoeWEeyyEJFKpspqDg" name="idelev">
+        <modelElement href="TemaPIB.uml#_h-zM04eWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4Qu4eWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4QvIeWEeyyEJFKpspqDg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4QvYeWEeyyEJFKpspqDg" name="idsubiect">
+        <modelElement href="TemaPIB.uml#_h-zM1IeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4QvoeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4Qv4eWEeyyEJFKpspqDg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4QwIeWEeyyEJFKpspqDg" name="Nota_acordata">
+        <modelElement href="TemaPIB.uml#_h-zM1YeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4QwYeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4QwoeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4Qw4eWEeyyEJFKpspqDg" name="Data_notare">
+        <modelElement href="TemaPIB.uml#_h-zM1oeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4QxIeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4QxYeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_iA4QxoeWEeyyEJFKpspqDg" name="vedeTabela">
+      <modelElement href="TemaPIB.uml#_h-zz4IeWEeyyEJFKpspqDg"/>
+      <visibility xmi:id="_iA4Qx4eWEeyyEJFKpspqDg" label="+"/>
+      <cardinality xmi:id="_iA4QyIeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_iA4QyYeWEeyyEJFKpspqDg">
+        <modelElement href="TemaPIB.uml#_h_vA8oeWEeyyEJFKpspqDg"/>
+        <type xmi:id="_iA4QyoeWEeyyEJFKpspqDg" name="ResultSet">
+          <modelElement href="TemaPIB.uml#_h_vA8IeWEeyyEJFKpspqDg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_iA4Qy4eWEeyyEJFKpspqDg" name="tabel">
+        <modelElement href="TemaPIB.uml#_h-zz4YeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4QzIeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4QzYeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_iA4QzoeWEeyyEJFKpspqDg" name="vedeNote">
+      <modelElement href="TemaPIB.uml#_h-0a8IeWEeyyEJFKpspqDg"/>
+      <visibility xmi:id="_iA4Qz4eWEeyyEJFKpspqDg" label="+"/>
+      <cardinality xmi:id="_iA4Q0IeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_iA4Q0YeWEeyyEJFKpspqDg">
+        <modelElement href="TemaPIB.uml#_h_voAIeWEeyyEJFKpspqDg"/>
+        <type xmi:id="_iA4Q0oeWEeyyEJFKpspqDg" name="ResultSet">
+          <modelElement href="TemaPIB.uml#_h_vA8IeWEeyyEJFKpspqDg"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_iA4Q04eWEeyyEJFKpspqDg" name="stergeDateTabela">
+      <modelElement href="TemaPIB.uml#_h-0a8YeWEeyyEJFKpspqDg"/>
+      <visibility xmi:id="_iA4Q1IeWEeyyEJFKpspqDg" label="+"/>
+      <cardinality xmi:id="_iA4Q1YeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_iA4Q1oeWEeyyEJFKpspqDg" name="primaryKeys">
+        <modelElement href="TemaPIB.uml#_h-0a8oeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4Q14eWEeyyEJFKpspqDg" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_iA4Q2IeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4Q2YeWEeyyEJFKpspqDg" name="tabela">
+        <modelElement href="TemaPIB.uml#_h-1CAIeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4Q2oeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4Q24eWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4Q3IeWEeyyEJFKpspqDg" name="dupaID">
+        <modelElement href="TemaPIB.uml#_h-1CAYeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4Q3YeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4Q3oeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_iA4Q34eWEeyyEJFKpspqDg" name="stergeTabela">
+      <modelElement href="TemaPIB.uml#_h-1CA4eWEeyyEJFKpspqDg"/>
+      <visibility xmi:id="_iA4Q4IeWEeyyEJFKpspqDg" label="+"/>
+      <cardinality xmi:id="_iA4Q4YeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_iA4Q4oeWEeyyEJFKpspqDg" name="tabela">
+        <modelElement href="TemaPIB.uml#_h-1CBIeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4Q44eWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4Q5IeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_iA4Q5YeWEeyyEJFKpspqDg" name="modificaTabela">
+      <modelElement href="TemaPIB.uml#_h-1pEIeWEeyyEJFKpspqDg"/>
+      <visibility xmi:id="_iA4Q5oeWEeyyEJFKpspqDg" label="+"/>
+      <cardinality xmi:id="_iA4Q54eWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+      <parameters xmi:id="_iA4Q6IeWEeyyEJFKpspqDg" name="tabela">
+        <modelElement href="TemaPIB.uml#_h-1pEYeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4Q6YeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4Q6oeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4Q64eWEeyyEJFKpspqDg" name="IDTabela">
+        <modelElement href="TemaPIB.uml#_h-1pEoeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4Q7IeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4Q7YeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4Q7oeWEeyyEJFKpspqDg" name="ID">
+        <modelElement href="TemaPIB.uml#_h-1pE4eWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4Q74eWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4Q8IeWEeyyEJFKpspqDg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4Q8YeWEeyyEJFKpspqDg" name="campuri">
+        <modelElement href="TemaPIB.uml#_h-1pFIeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4Q8oeWEeyyEJFKpspqDg" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_iA4Q84eWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4Q9IeWEeyyEJFKpspqDg" name="valori">
+        <modelElement href="TemaPIB.uml#_h-1pFYeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4Q9YeWEeyyEJFKpspqDg" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_iA4Q9oeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_iA4Q94eWEeyyEJFKpspqDg" name="intoarceLinie">
+      <modelElement href="TemaPIB.uml#_h-2QIoeWEeyyEJFKpspqDg"/>
+      <visibility xmi:id="_iA4Q-IeWEeyyEJFKpspqDg" label="+"/>
+      <cardinality xmi:id="_iA4Q-YeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_iA4Q-oeWEeyyEJFKpspqDg">
+        <modelElement href="TemaPIB.uml#_h_voAYeWEeyyEJFKpspqDg"/>
+        <type xmi:id="_iA4Q-4eWEeyyEJFKpspqDg" name="ResultSet">
+          <modelElement href="TemaPIB.uml#_h_vA8IeWEeyyEJFKpspqDg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_iA4Q_IeWEeyyEJFKpspqDg" name="tabela">
+        <modelElement href="TemaPIB.uml#_h-2QI4eWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4Q_YeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4Q_oeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4Q_4eWEeyyEJFKpspqDg" name="ID">
+        <modelElement href="TemaPIB.uml#_h-2QJIeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4RAIeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4RAYeWEeyyEJFKpspqDg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_iA4RAoeWEeyyEJFKpspqDg" name="intoarceLinieDupaId">
+      <modelElement href="TemaPIB.uml#_h-23MIeWEeyyEJFKpspqDg"/>
+      <visibility xmi:id="_iA4RA4eWEeyyEJFKpspqDg" label="+"/>
+      <cardinality xmi:id="_iA4RBIeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_iA4RBYeWEeyyEJFKpspqDg">
+        <modelElement href="TemaPIB.uml#_h_wPEIeWEeyyEJFKpspqDg"/>
+        <type xmi:id="_iA4RBoeWEeyyEJFKpspqDg" name="ResultSet">
+          <modelElement href="TemaPIB.uml#_h_vA8IeWEeyyEJFKpspqDg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_iA4RB4eWEeyyEJFKpspqDg" name="tabela">
+        <modelElement href="TemaPIB.uml#_h-23MYeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4RCIeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4RCYeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4RCoeWEeyyEJFKpspqDg" name="denumireId">
+        <modelElement href="TemaPIB.uml#_h-23MoeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4RC4eWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4RDIeWEeyyEJFKpspqDg" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_iA4RDYeWEeyyEJFKpspqDg" name="ID">
+        <modelElement href="TemaPIB.uml#_h-23M4eWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4RDoeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4RD4eWEeyyEJFKpspqDg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_iA4REIeWEeyyEJFKpspqDg" name="intoarceNotaId">
+      <modelElement href="TemaPIB.uml#_h-3eQIeWEeyyEJFKpspqDg"/>
+      <visibility xmi:id="_iA4REYeWEeyyEJFKpspqDg" label="+"/>
+      <cardinality xmi:id="_iA4REoeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_iA4RE4eWEeyyEJFKpspqDg">
+        <modelElement href="TemaPIB.uml#_h_wPEYeWEeyyEJFKpspqDg"/>
+        <type xmi:id="_iA4RFIeWEeyyEJFKpspqDg" name="ResultSet">
+          <modelElement href="TemaPIB.uml#_h_vA8IeWEeyyEJFKpspqDg"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_iA4RFYeWEeyyEJFKpspqDg" name="ID">
+        <modelElement href="TemaPIB.uml#_h-3eQYeWEeyyEJFKpspqDg"/>
+        <cardinality xmi:id="_iA4RFoeWEeyyEJFKpspqDg" label="1" max="1" min="1"/>
+        <type xmi:id="_iA4RF4eWEeyyEJFKpspqDg" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_iA9wAIeWEeyyEJFKpspqDg" name="ClassNotFoundException">
+    <modelElement href="TemaPIB.uml#_h_tLwoeWEeyyEJFKpspqDg"/>
+    <visualProperties xmi:id="_iA9wAYeWEeyyEJFKpspqDg" position="970.0,391.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_iA9wAoeWEeyyEJFKpspqDg" name="Reference">
+      <modelElement href="TemaPIB.uml#_h_ty0IeWEeyyEJFKpspqDg"/>
+    </stereotypes>
+    <visibility xmi:id="_iA9wA4eWEeyyEJFKpspqDg" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_iA--IIeWEeyyEJFKpspqDg" name="SQLException">
+    <modelElement href="TemaPIB.uml#_h_ty0YeWEeyyEJFKpspqDg"/>
+    <visualProperties xmi:id="_iA--IYeWEeyyEJFKpspqDg" position="-139.0,391.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_iA--IoeWEeyyEJFKpspqDg" name="Reference">
+      <modelElement href="TemaPIB.uml#_h_uZ4IeWEeyyEJFKpspqDg"/>
+    </stereotypes>
+    <visibility xmi:id="_iA--I4eWEeyyEJFKpspqDg" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_iA_lMIeWEeyyEJFKpspqDg" name="Exception">
+    <modelElement href="TemaPIB.uml#_h_uZ4YeWEeyyEJFKpspqDg"/>
+    <visualProperties xmi:id="_iA_lMYeWEeyyEJFKpspqDg" position="-284.0,391.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_iA_lMoeWEeyyEJFKpspqDg" name="Reference">
+      <modelElement href="TemaPIB.uml#_h_uZ4oeWEeyyEJFKpspqDg"/>
+    </stereotypes>
+    <visibility xmi:id="_iA_lM4eWEeyyEJFKpspqDg" label="+"/>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_h1LWwIeWEeyyEJFKpspqDg" name="TemaPIB">
+    <eAnnotations xmi:id="_h4ty8IeWEeyyEJFKpspqDg" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_h4uaAIeWEeyyEJFKpspqDg" source="codegen">
+        <details xmi:id="_h4uaAYeWEeyyEJFKpspqDg" key="codegenDirectory" value="/TemaPIB/src/main/java"/>
+        <details xmi:id="_iAwUoIeWEeyyEJFKpspqDg" key="AssociatedSourceCode" value="/TemaPIB/src/main/java/db/JavaBean.java;1211904798/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_h-lxcIeWEeyyEJFKpspqDg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_h-lxcYeWEeyyEJFKpspqDg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_h-lxcoeWEeyyEJFKpspqDg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_h-lxc4eWEeyyEJFKpspqDg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_h-mYgIeWEeyyEJFKpspqDg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_h-mYgYeWEeyyEJFKpspqDg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_h-mYgoeWEeyyEJFKpspqDg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_h-mYg4eWEeyyEJFKpspqDg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_h-mYhIeWEeyyEJFKpspqDg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_h-m_kIeWEeyyEJFKpspqDg" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_h-m_kYeWEeyyEJFKpspqDg" name="sql">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_h_sksIeWEeyyEJFKpspqDg" name="Connection"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_h_ty0YeWEeyyEJFKpspqDg" name="SQLException"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_h_vA8IeWEeyyEJFKpspqDg" name="ResultSet"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_h_tLwYeWEeyyEJFKpspqDg" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_h_tLwoeWEeyyEJFKpspqDg" name="ClassNotFoundException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_h_uZ4YeWEeyyEJFKpspqDg" name="Exception"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_h-r4EIeWEeyyEJFKpspqDg" name="db">
+      <packagedElement xmi:type="uml:Class" xmi:id="_h-wJgIeWEeyyEJFKpspqDg" name="JavaBean">
+        <ownedAttribute xmi:id="_h_w2IIeWEeyyEJFKpspqDg" name="error" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_h_xdMIeWEeyyEJFKpspqDg" name="con" visibility="package" type="_h_sksIeWEeyyEJFKpspqDg" association="_h_2VsIeWEeyyEJFKpspqDg"/>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h_yrUIeWEeyyEJFKpspqDg" name="connect" specification="_h-xXooeWEeyyEJFKpspqDg">
+          <language>java</language>
+          <body>try {&#xD;
+			Class.forName(&quot;com.mysql.cj.jdbc.Driver&quot;);&#xD;
+			con = DriverManager.getConnection(&quot;jdbc:mysql://localhost:3306/tema_pibd_1?useSSL=false&quot;, &quot;root&quot;, &quot;Mocuta10.04&quot;);&#xD;
+		} catch (ClassNotFoundException cnfe) {&#xD;
+			error = &quot;ClassNotFoundException: Nu s-a gasit driverul bazei de date.&quot;;&#xD;
+			throw new ClassNotFoundException(error);&#xD;
+		} catch (SQLException cnfe) {&#xD;
+			error = &quot;SQLException: Nu se poate conecta la baza de date.&quot;;&#xD;
+			throw new SQLException(error);&#xD;
+		} catch (Exception e) {&#xD;
+			error = &quot;Exception: A aparut o exceptie neprevazuta in timp ce se stabilea legatura la baza de date.&quot;;&#xD;
+			throw new Exception(error);&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h_yrUYeWEeyyEJFKpspqDg" name="disconnect" specification="_h-xXo4eWEeyyEJFKpspqDg">
+          <language>java</language>
+          <body>try {&#xD;
+			if (con != null) {&#xD;
+				con.close();&#xD;
+			}&#xD;
+		} catch (SQLException sqle) {&#xD;
+			error = (&quot;SQLException: Nu se poate inchide conexiunea la baza de date.&quot;);&#xD;
+			throw new SQLException(error);&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h_yrUoeWEeyyEJFKpspqDg" name="adaugaElev" specification="_h-x-sIeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h_zSYIeWEeyyEJFKpspqDg" name="nume">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_zSYYeWEeyyEJFKpspqDg" name="prenume">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_zSYoeWEeyyEJFKpspqDg" name="data_nasterii">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_zSY4eWEeyyEJFKpspqDg" name="cnp">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_zSZIeWEeyyEJFKpspqDg" name="adresa">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_zSZYeWEeyyEJFKpspqDg" name="telefon">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_zSZoeWEeyyEJFKpspqDg" name="clasa">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (con != null) {&#xD;
+			try {&#xD;
+				// creaza un &quot;prepared SQL statement&quot;&#xD;
+				Statement stmt;&#xD;
+				stmt = con.createStatement();&#xD;
+				stmt.executeUpdate(&quot;insert into `tema_pibd_1`.`elevi`(nume, prenume, data_nasterii, cnp, adresa, telefon, clasa)&quot;&#xD;
+						+ &quot; values ('&quot; + nume + &quot;', '&quot; + prenume + &quot;', '&quot; + data_nasterii + &quot;', '&quot; + cnp + &quot;', '&quot; + adresa + &quot;', '&quot; + telefon + &quot;', '&quot; + clasa + &quot;');&quot;);&#xD;
+&#xD;
+			} catch (SQLException sqle) {&#xD;
+				error = &quot;ExceptieSQL: Reactualizare nereusita; este posibil sa existe duplicate.&quot;;&#xD;
+				throw new SQLException(error);&#xD;
+			}&#xD;
+		} else {&#xD;
+			error = &quot;Exceptie: Conexiunea cu baza de date a fost pierduta.&quot;;&#xD;
+			throw new Exception(error);&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h_zSZ4eWEeyyEJFKpspqDg" name="adaugaSubiect" specification="_h-ylwoeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h_zSaIeWEeyyEJFKpspqDg" name="nume_profesor">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_zSaYeWEeyyEJFKpspqDg" name="materie">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_zSaoeWEeyyEJFKpspqDg" name="numar_probleme">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (con != null) {&#xD;
+			try {&#xD;
+				// creaza un &quot;prepared SQL statement&quot;&#xD;
+				Statement stmt;&#xD;
+				stmt = con.createStatement();&#xD;
+				stmt.executeUpdate(&quot;insert into `tema_pibd_1`.`subiecte`(profesor, materie, numar_probleme)&quot;&#xD;
+						+ &quot; values('&quot; + nume_profesor + &quot;'  , '&quot; + materie + &quot;', '&quot; + numar_probleme + &quot;');&quot;);&#xD;
+&#xD;
+			} catch (SQLException sqle) {&#xD;
+				error = &quot;ExceptieSQL: Reactualizare nereusita; este posibil sa existe duplicate.&quot;;&#xD;
+				throw new SQLException(error);&#xD;
+			}&#xD;
+		} else {&#xD;
+			error = &quot;Exceptie: Conexiunea cu baza de date a fost pierduta.&quot;;&#xD;
+			throw new Exception(error);&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h_zSa4eWEeyyEJFKpspqDg" name="adaugaNota" specification="_h-zM0oeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h_zSbIeWEeyyEJFKpspqDg" name="idelev">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_zSbYeWEeyyEJFKpspqDg" name="idsubiect">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_zSboeWEeyyEJFKpspqDg" name="Nota_acordata">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_zSb4eWEeyyEJFKpspqDg" name="Data_notare">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (con != null) {&#xD;
+			try {&#xD;
+				// creaza un &quot;prepared SQL statement&quot;&#xD;
+				Statement stmt;&#xD;
+				stmt = con.createStatement();&#xD;
+				stmt.executeUpdate(&quot;insert into note(idelev, idsubiect, nota_acordata, data_notare)&quot;&#xD;
+						+ &quot; values('&quot; + idelev + &quot;'  , '&quot; + idsubiect + &quot;', '&quot; + Nota_acordata + &quot;', '&quot; + Data_notare + &quot;');&quot;);&#xD;
+&#xD;
+			} catch (SQLException sqle) {&#xD;
+				error = &quot;ExceptieSQL: Reactualizare nereusita; este posibil sa existe duplicate.&quot;;&#xD;
+				throw new SQLException(error);&#xD;
+			}&#xD;
+		} else {&#xD;
+			error = &quot;Exceptie: Conexiunea cu baza de date a fost pierduta.&quot;;&#xD;
+			throw new Exception(error);&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h_zScIeWEeyyEJFKpspqDg" name="vedeTabela" specification="_h-zz4IeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h_zScYeWEeyyEJFKpspqDg" name="tabel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_zScoeWEeyyEJFKpspqDg" type="_h_vA8IeWEeyyEJFKpspqDg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>ResultSet rs = null;&#xD;
+		try {&#xD;
+			String queryString = (&quot;select * from `tema_pibd_1`.`&quot; + tabel + &quot;`;&quot;);&#xD;
+			Statement stmt = con.createStatement(/*ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY*/);&#xD;
+			rs = stmt.executeQuery(queryString);&#xD;
+		} catch (SQLException sqle) {&#xD;
+			error = &quot;SQLException: Interogarea nu a fost posibila.&quot;;&#xD;
+			throw new SQLException(error);&#xD;
+		} catch (Exception e) {&#xD;
+			error = &quot;A aparut o exceptie in timp ce se extrageau datele.&quot;;&#xD;
+			throw new Exception(error);&#xD;
+		}&#xD;
+		return rs;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h_z5cIeWEeyyEJFKpspqDg" name="vedeNote" specification="_h-0a8IeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h_z5cYeWEeyyEJFKpspqDg" type="_h_vA8IeWEeyyEJFKpspqDg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>ResultSet rs = null;&#xD;
+		try {&#xD;
+			String queryString = (&quot;select a.Nume NumeElev, a.Prenume PrenumeElev, a.Clasa, b.Profesor Profesor, b.Materie,&quot;&#xD;
+					+ &quot; b.Numar_probleme, c.idnota, c.idelev idelev_nota, c.idsubiect idsubiect_nota, c.Nota_acordata, &quot;&#xD;
+					+ &quot;c.Data_notare from elevi a, subiecte b, note c where a.idelev = c.idelev and b.idsubiect = c.idsubiect;&quot;);&#xD;
+			Statement stmt = con.createStatement(/*ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY*/);&#xD;
+			rs = stmt.executeQuery(queryString);&#xD;
+		} catch (SQLException sqle) {&#xD;
+			error = &quot;SQLException: Interogarea nu &quot;&#xD;
+					+ &quot;a fost posibila.&quot;;&#xD;
+			throw new SQLException(error);&#xD;
+		} catch (Exception e) {&#xD;
+			error = &quot;A aparut o exceptie in timp ce se extrageau datele.&quot;;&#xD;
+			throw new Exception(error);&#xD;
+		}&#xD;
+		return rs;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h_z5coeWEeyyEJFKpspqDg" name="stergeDateTabela" specification="_h-0a8YeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h_z5c4eWEeyyEJFKpspqDg" name="primaryKeys">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h_z5dIeWEeyyEJFKpspqDg" value="*"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_z5dYeWEeyyEJFKpspqDg" name="tabela">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_z5doeWEeyyEJFKpspqDg" name="dupaID">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (con != null) {&#xD;
+			try {&#xD;
+				// creaza un &quot;prepared SQL statement&quot;&#xD;
+				long aux;&#xD;
+				PreparedStatement delete;&#xD;
+				delete = con.prepareStatement(&quot;DELETE FROM &quot; + tabela + &quot; WHERE &quot; + dupaID + &quot;=?;&quot;);&#xD;
+				for (int i = 0; i &lt; primaryKeys.length; i++) {&#xD;
+					aux = java.lang.Long.parseLong(primaryKeys[i]);&#xD;
+					delete.setLong(1, aux);&#xD;
+					delete.execute();&#xD;
+				}&#xD;
+			} catch (SQLException sqle) {&#xD;
+				error = &quot;ExceptieSQL: Reactualizare nereusita; este posibil sa existe duplicate.&quot;;&#xD;
+				throw new SQLException(error);&#xD;
+			} catch (Exception e) {&#xD;
+				error = &quot;A aparut o exceptie in timp ce erau sterse inregistrarile.&quot;;&#xD;
+				throw new Exception(error);&#xD;
+			}&#xD;
+		} else {&#xD;
+			error = &quot;Exceptie: Conexiunea cu baza de date a fost pierduta.&quot;;&#xD;
+			throw new Exception(error);&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h_z5d4eWEeyyEJFKpspqDg" name="stergeTabela" specification="_h-1CA4eWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h_z5eIeWEeyyEJFKpspqDg" name="tabela">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>if (con != null) {&#xD;
+			try {&#xD;
+				// creaza un &quot;prepared SQL statement&quot;&#xD;
+				Statement stmt;&#xD;
+				stmt = con.createStatement();&#xD;
+				stmt.executeUpdate(&quot;delete from &quot; + tabela + &quot;;&quot;);&#xD;
+			} catch (SQLException sqle) {&#xD;
+				error = &quot;ExceptieSQL: Stergere nereusita; este posibil sa existe duplicate.&quot;;&#xD;
+				throw new SQLException(error);&#xD;
+			}&#xD;
+		} else {&#xD;
+			error = &quot;Exceptie: Conexiunea cu baza de date a fost pierduta.&quot;;&#xD;
+			throw new Exception(error);&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h_0ggIeWEeyyEJFKpspqDg" name="modificaTabela" specification="_h-1pEIeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h_0ggYeWEeyyEJFKpspqDg" name="tabela">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_0ggoeWEeyyEJFKpspqDg" name="IDTabela">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_0gg4eWEeyyEJFKpspqDg" name="ID">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_0ghIeWEeyyEJFKpspqDg" name="campuri">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h_0ghYeWEeyyEJFKpspqDg" value="*"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_0ghoeWEeyyEJFKpspqDg" name="valori">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h_0gh4eWEeyyEJFKpspqDg" value="*"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>String update = &quot;update &quot; + tabela + &quot; set &quot;;&#xD;
+		String temp = &quot;&quot;;&#xD;
+		if (con != null) {&#xD;
+			try {&#xD;
+				for (int i = 0; i &lt; campuri.length; i++) {&#xD;
+					if (i != (campuri.length - 1)) {&#xD;
+						temp = temp + campuri[i] + &quot;='&quot; + valori[i] + &quot;', &quot;;&#xD;
+					} else {&#xD;
+						temp = temp + campuri[i] + &quot;='&quot; + valori[i] + &quot;' where &quot; + IDTabela + &quot; = '&quot; + ID + &quot;';&quot;;&#xD;
+					}&#xD;
+				}&#xD;
+				update = update + temp;&#xD;
+				// creaza un &quot;prepared SQL statement&quot;&#xD;
+				Statement stmt;&#xD;
+				stmt = con.createStatement();&#xD;
+				stmt.executeUpdate(update);&#xD;
+			} catch (SQLException sqle) {&#xD;
+				error = &quot;ExceptieSQL: Reactualizare nereusita; este posibil sa existe duplicate.&quot;;&#xD;
+				throw new SQLException(error);&#xD;
+			}&#xD;
+		} else {&#xD;
+			error = &quot;Exceptie: Conexiunea cu baza de date a fost pierduta.&quot;;&#xD;
+			throw new Exception(error);&#xD;
+		}&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h_0giIeWEeyyEJFKpspqDg" name="intoarceLinie" specification="_h-2QIoeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h_0giYeWEeyyEJFKpspqDg" name="tabela">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_0gioeWEeyyEJFKpspqDg" name="ID">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_0gi4eWEeyyEJFKpspqDg" type="_h_vA8IeWEeyyEJFKpspqDg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>ResultSet rs = null;&#xD;
+		try {&#xD;
+			// Executa interogarea&#xD;
+			String queryString = (&quot;SELECT * FROM &quot; + tabela + &quot; where idelev=&quot; + ID + &quot;;&quot;);&#xD;
+			Statement stmt = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);&#xD;
+			rs = stmt.executeQuery(queryString); //sql exception&#xD;
+		} catch (SQLException sqle) {&#xD;
+			error = &quot;SQLException: Interogarea nu a fost posibila.&quot;;&#xD;
+			throw new SQLException(error);&#xD;
+		} catch (Exception e) {&#xD;
+			error = &quot;A aparut o exceptie in timp ce se extrageau datele.&quot;;&#xD;
+			throw new Exception(error);&#xD;
+		}&#xD;
+		return rs;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h_0gjIeWEeyyEJFKpspqDg" name="intoarceLinieDupaId" specification="_h-23MIeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h_0gjYeWEeyyEJFKpspqDg" name="tabela">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_0gjoeWEeyyEJFKpspqDg" name="denumireId">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_0gj4eWEeyyEJFKpspqDg" name="ID">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_0gkIeWEeyyEJFKpspqDg" type="_h_vA8IeWEeyyEJFKpspqDg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>ResultSet rs = null;&#xD;
+		try {&#xD;
+			// Executa interogarea&#xD;
+			String queryString = (&quot;SELECT * FROM &quot; + tabela + &quot; where &quot; + denumireId + &quot;=&quot; + ID + &quot;;&quot;);&#xD;
+			Statement stmt = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);&#xD;
+			rs = stmt.executeQuery(queryString); //sql exception&#xD;
+		} catch (SQLException sqle) {&#xD;
+			error = &quot;SQLException: Interogarea nu a fost posibila.&quot;;&#xD;
+			throw new SQLException(error);&#xD;
+		} catch (Exception e) {&#xD;
+			error = &quot;A aparut o exceptie in timp ce se extrageau datele.&quot;;&#xD;
+			throw new Exception(error);&#xD;
+		}&#xD;
+		return rs;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_h_0gkYeWEeyyEJFKpspqDg" name="intoarceNotaId" specification="_h-3eQIeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h_0gkoeWEeyyEJFKpspqDg" name="ID">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_0gk4eWEeyyEJFKpspqDg" type="_h_vA8IeWEeyyEJFKpspqDg" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>ResultSet rs = null;&#xD;
+		try {&#xD;
+			// Executa interogarea&#xD;
+			String queryString = (&quot;select a.Nume NumeElev, a.Prenume PrenumeElev, a.Adresa, a.Telefon, b.Profesor NumeProfesor,&quot;&#xD;
+					+ &quot; b.Materie, b.Numar_probleme, c.idnota, c.idelev idelev_nota, c.idsubiect idsubiect_nota, c.Nota_acordata,&quot;&#xD;
+					+ &quot; c.Data_notare from elevi a, subiecte b, note c where a.idelev = c.idelev and b.idsubiect = c.idsubiect and&quot;&#xD;
+					+ &quot; idnota = '&quot; + ID + &quot;';&quot;);&#xD;
+			Statement stmt = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);&#xD;
+			rs = stmt.executeQuery(queryString); //sql exception&#xD;
+		} catch (SQLException sqle) {&#xD;
+			error = &quot;SQLException: Interogarea nu a fost posibila.&quot;;&#xD;
+			throw new SQLException(error);&#xD;
+		} catch (Exception e) {&#xD;
+			error = &quot;A aparut o exceptie in timp ce se extrageau datele.&quot;;&#xD;
+			throw new Exception(error);&#xD;
+		}&#xD;
+		return rs;&#xD;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_h-wwkIeWEeyyEJFKpspqDg" name="JavaBean">
+          <eAnnotations xmi:id="_h-wwkYeWEeyyEJFKpspqDg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_h-wwkoeWEeyyEJFKpspqDg" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_h-xXoYeWEeyyEJFKpspqDg" type="_h-wJgIeWEeyyEJFKpspqDg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h-xXooeWEeyyEJFKpspqDg" name="connect" method="_h_yrUIeWEeyyEJFKpspqDg" raisedException="_h_tLwoeWEeyyEJFKpspqDg _h_ty0YeWEeyyEJFKpspqDg _h_uZ4YeWEeyyEJFKpspqDg"/>
+        <ownedOperation xmi:id="_h-xXo4eWEeyyEJFKpspqDg" name="disconnect" method="_h_yrUYeWEeyyEJFKpspqDg" raisedException="_h_ty0YeWEeyyEJFKpspqDg"/>
+        <ownedOperation xmi:id="_h-x-sIeWEeyyEJFKpspqDg" name="adaugaElev" method="_h_yrUoeWEeyyEJFKpspqDg" raisedException="_h_ty0YeWEeyyEJFKpspqDg _h_uZ4YeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h-x-sYeWEeyyEJFKpspqDg" name="nume">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-x-soeWEeyyEJFKpspqDg" name="prenume">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-x-s4eWEeyyEJFKpspqDg" name="data_nasterii">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-x-tIeWEeyyEJFKpspqDg" name="cnp">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-x-tYeWEeyyEJFKpspqDg" name="adresa">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-ylwIeWEeyyEJFKpspqDg" name="telefon">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-ylwYeWEeyyEJFKpspqDg" name="clasa">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h-ylwoeWEeyyEJFKpspqDg" name="adaugaSubiect" method="_h_zSZ4eWEeyyEJFKpspqDg" raisedException="_h_ty0YeWEeyyEJFKpspqDg _h_uZ4YeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h-ylw4eWEeyyEJFKpspqDg" name="nume_profesor">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-zM0IeWEeyyEJFKpspqDg" name="materie">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-zM0YeWEeyyEJFKpspqDg" name="numar_probleme">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h-zM0oeWEeyyEJFKpspqDg" name="adaugaNota" method="_h_zSa4eWEeyyEJFKpspqDg" raisedException="_h_ty0YeWEeyyEJFKpspqDg _h_uZ4YeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h-zM04eWEeyyEJFKpspqDg" name="idelev">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-zM1IeWEeyyEJFKpspqDg" name="idsubiect">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-zM1YeWEeyyEJFKpspqDg" name="Nota_acordata">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-zM1oeWEeyyEJFKpspqDg" name="Data_notare">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h-zz4IeWEeyyEJFKpspqDg" name="vedeTabela" method="_h_zScIeWEeyyEJFKpspqDg" raisedException="_h_ty0YeWEeyyEJFKpspqDg _h_uZ4YeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h-zz4YeWEeyyEJFKpspqDg" name="tabel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_vA8oeWEeyyEJFKpspqDg" type="_h_vA8IeWEeyyEJFKpspqDg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h-0a8IeWEeyyEJFKpspqDg" name="vedeNote" method="_h_z5cIeWEeyyEJFKpspqDg" raisedException="_h_ty0YeWEeyyEJFKpspqDg _h_uZ4YeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h_voAIeWEeyyEJFKpspqDg" type="_h_vA8IeWEeyyEJFKpspqDg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h-0a8YeWEeyyEJFKpspqDg" name="stergeDateTabela" method="_h_z5coeWEeyyEJFKpspqDg" raisedException="_h_ty0YeWEeyyEJFKpspqDg _h_uZ4YeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h-0a8oeWEeyyEJFKpspqDg" name="primaryKeys">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h-1CAoeWEeyyEJFKpspqDg" value="*"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-1CAIeWEeyyEJFKpspqDg" name="tabela">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-1CAYeWEeyyEJFKpspqDg" name="dupaID">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h-1CA4eWEeyyEJFKpspqDg" name="stergeTabela" method="_h_z5d4eWEeyyEJFKpspqDg" raisedException="_h_ty0YeWEeyyEJFKpspqDg _h_uZ4YeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h-1CBIeWEeyyEJFKpspqDg" name="tabela">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h-1pEIeWEeyyEJFKpspqDg" name="modificaTabela" method="_h_0ggIeWEeyyEJFKpspqDg" raisedException="_h_ty0YeWEeyyEJFKpspqDg _h_uZ4YeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h-1pEYeWEeyyEJFKpspqDg" name="tabela">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-1pEoeWEeyyEJFKpspqDg" name="IDTabela">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-1pE4eWEeyyEJFKpspqDg" name="ID">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-1pFIeWEeyyEJFKpspqDg" name="campuri">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h-2QIIeWEeyyEJFKpspqDg" value="*"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-1pFYeWEeyyEJFKpspqDg" name="valori">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h-2QIYeWEeyyEJFKpspqDg" value="*"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h-2QIoeWEeyyEJFKpspqDg" name="intoarceLinie" method="_h_0giIeWEeyyEJFKpspqDg" raisedException="_h_ty0YeWEeyyEJFKpspqDg _h_uZ4YeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h-2QI4eWEeyyEJFKpspqDg" name="tabela">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-2QJIeWEeyyEJFKpspqDg" name="ID">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_voAYeWEeyyEJFKpspqDg" type="_h_vA8IeWEeyyEJFKpspqDg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h-23MIeWEeyyEJFKpspqDg" name="intoarceLinieDupaId" method="_h_0gjIeWEeyyEJFKpspqDg" raisedException="_h_ty0YeWEeyyEJFKpspqDg _h_uZ4YeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h-23MYeWEeyyEJFKpspqDg" name="tabela">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-23MoeWEeyyEJFKpspqDg" name="denumireId">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h-23M4eWEeyyEJFKpspqDg" name="ID">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_wPEIeWEeyyEJFKpspqDg" type="_h_vA8IeWEeyyEJFKpspqDg" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_h-3eQIeWEeyyEJFKpspqDg" name="intoarceNotaId" method="_h_0gkYeWEeyyEJFKpspqDg" raisedException="_h_ty0YeWEeyyEJFKpspqDg _h_uZ4YeWEeyyEJFKpspqDg">
+          <ownedParameter xmi:id="_h-3eQYeWEeyyEJFKpspqDg" name="ID">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_h_wPEYeWEeyyEJFKpspqDg" type="_h_vA8IeWEeyyEJFKpspqDg" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_h_2VsIeWEeyyEJFKpspqDg" name="" memberEnd="_h_2VsYeWEeyyEJFKpspqDg _h_xdMIeWEeyyEJFKpspqDg">
+        <ownedEnd xmi:id="_h_2VsYeWEeyyEJFKpspqDg" name="" type="_h-wJgIeWEeyyEJFKpspqDg" association="_h_2VsIeWEeyyEJFKpspqDg"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_h4uaAoeWEeyyEJFKpspqDg">
+      <eAnnotations xmi:id="_h4vBEIeWEeyyEJFKpspqDg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_h4vBEYeWEeyyEJFKpspqDg" base_Package="_h1LWwIeWEeyyEJFKpspqDg">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_h-xXoIeWEeyyEJFKpspqDg" base_Element="_h-wwkIeWEeyyEJFKpspqDg"/>
+  <UMLLabProfile:Reference xmi:id="_h_tLwIeWEeyyEJFKpspqDg" base_Element="_h_sksIeWEeyyEJFKpspqDg"/>
+  <UMLLabProfile:Reference xmi:id="_h_ty0IeWEeyyEJFKpspqDg" base_Element="_h_tLwoeWEeyyEJFKpspqDg"/>
+  <UMLLabProfile:Reference xmi:id="_h_uZ4IeWEeyyEJFKpspqDg" base_Element="_h_ty0YeWEeyyEJFKpspqDg"/>
+  <UMLLabProfile:Reference xmi:id="_h_uZ4oeWEeyyEJFKpspqDg" base_Element="_h_uZ4YeWEeyyEJFKpspqDg"/>
+  <UMLLabProfile:Reference xmi:id="_h_vA8YeWEeyyEJFKpspqDg" base_Element="_h_vA8IeWEeyyEJFKpspqDg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_h_w2IYeWEeyyEJFKpspqDg" base_Element="_h_w2IIeWEeyyEJFKpspqDg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_h_xdMYeWEeyyEJFKpspqDg" base_Element="_h_xdMIeWEeyyEJFKpspqDg"/>
+  <UMLLabProfile:Reference xmi:id="_h_28wIeWEeyyEJFKpspqDg" base_Element="_h_2VsIeWEeyyEJFKpspqDg"/>
+</xmi:XMI>
